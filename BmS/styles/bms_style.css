@@ -5,7 +5,7 @@
 
 body {
 	margin:40px auto;
-    background: url(.../Bms/background.jpg) no-repeat center top fixed;
+    background: url(Bms/BmS/background.jpg) no-repeat center top fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
