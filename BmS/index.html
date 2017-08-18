@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<meta charset="utf-8">
+<title>Be my Sacrifice!!!</title>
+
+<link rel="stylesheet" type="text/css" href="Bms/BmS/styles/bms_style.css">
+
+<script src="Bms/BmS/js/jquery-1.9.1.min.js"></script>
+<script src="Bms/BmS/js/jquery-tabs.js"></script>
+
+</head>
+
+<body>
+<ul class="tabs"> 
+  <li><a href="#" class="current">Сервер</a></li>
+  <li><a href="#" class="">Команды</a></li>
+  <li><a href="#" class="">Перки</a></li>
+  <li><a href="#" class="">Администрация</a></li>
+  <li><a href="#" class="">Контакты</a></li>
+</ul>
+
+<!-- tab "panes" --> 
+<div class="panes">
+
+  <div style="display: block;">
+  <p align="center">Добро пожаловать на игровой сервер <strong>Be my Sacrifice!</strong></p>
+  <p>Прежде чем приступить к игре, пожалуйста, ознакомьтесь с данным сайтом!</p>
+<p>  Наш сервер вместил в себе огромную тучу возможностей и модификаций, при этом сохранив возможность сыграть практически в чистый <strong style="color: #961617;">Left4Dead</strong>. Помимо этого мы предлагаем различные <a href= "http://www.sourcemod.net/plugins.php?mod=6&search=1"><strong><i><ins>Игровые Модификации</ins></i></strong></a> такие как: Перки, Двойной инвентарь, Настройки Заразы на свой вкус и многое другое! На сервере так же присутствуют <a href= "https://yadi.sk/d/2Cnm_Ij23Jc3qA"><strong><i><ins>Дополнительные Кампании</ins></i></strong></a> дарящие новый экспириенс от нашей любимой игры. Некоторые стандартные локации тоже преобразились - добавились объекты делающие карты более фунциональными, также было <strong>закрыто большинство багов</strong>.</p>
+<p><strong style="color: #961617;">Внимание!!!</strong> На сервере действует постоянный конкурс. Лучший игрок месяца получает VIP пока не определится новый лучший игрок! Получить випку несколько раз подряд возможно, а вот купить <strong>НЕТ</strong>!  Определяться наш победитель будет с помощью <a href= "http://bmsstats.myarena.ru/stats/hlstats.php?mode=players&game=l4d"><strong><i><ins>Системы Статистики</ins></i></strong></a>, где вы можете узнать о результатах своей игры, посмотреть кто номер один в данный момент и сколько вам до него тянутся!</p>
+  <p>Перезагрузка сервера проиходит в <strong>6:00</strong> по МСК каждое утро. Статистика же обнуляется <strong>первого числа</strong> каждого месяца!</p>
+  <p>Против смерти, словно черти, мы вступаем в бой!</p>
+  </div>
+
+  <div style="display: none;">
+  <p>Все команды следует вводить в игровой чат.</p>
+    <table id="cmd" cellspacing="1" cellpadding="1">
+      <tbody>
+      <tr>
+        <td class="chat">!menu</td>
+        <td>Меню настройки игры</td>
+      </tr>
+      <tr>
+        <td class="chat">!pmenu</td>
+        <td>Для быстрого доступа ко всем командам</td>
+      </tr>
+		<tr>
+        <td class="chat">!csm</td>
+        <td>Сменить персонажа (Билл, Зои, Френсис, Луис)</td>
+      </tr>
+      <tr>
+        <td class="chat">!light white</td>
+        <td>Фонарик (red, blue, green, yellow, orange, purple)</td>
+      </tr>
+      <tr>
+        <td class="chat">!afk</td>
+        <td>Уйти в режим безделья</td>
+      </tr>
+      <tr>
+        <td class="chat">!join</td>
+        <td>Вернуться в игру</td>
+      </tr>
+      <tr>
+        <td class="chat">!silencer</td>
+        <td>Включить\Отключить Глушитель</td>
+      </tr>	
+      <tr>
+        <td class="chat">!laser</td>
+        <td>Включить\Отключить Лазерный прицел</td>
+      </tr>	  
+      <tr>
+        <td class="chat">!perks</td>
+        <td>Список перок</td>
+      </tr>
+      <tr>
+        <td class="chat">!drop</td>
+        <td>Выбросить предмет в руках</td>
+      </tr>
+      <tr>
+        <td class="chat">!kill</td>
+        <td>Суицид(для слабоморальных)</td>
+      </tr>
+      <tr>
+        <td class="chat">!vk</td>
+        <td>Кикнуть игрока</td>
+      </tr>
+      <tr>
+        <td class="chat">!vm</td>
+        <td>Отключить микрофон игрока</td>
+      </tr>
+	  <tr>
+        <td class="chat">/rank</td>
+        <td>Посмотреть свой ранг на сервере</td>
+      </tr>
+	  <tr>
+        <td class="chat">/hlx</td>
+        <td>Все манипуляции со статистикой</td>
+      </tr>
+      <tr>
+        <td class="chat">!mission</td>
+        <td>Выбрать дополнительную кампанию</td>
+      </tr>
+    </tbody></table>
+  <p><br>Передавать предметы другим игрокам можно с помощью клавиши «<strong>R</strong>»</br>
+   Поджигать отдельных зомби или крепить к ним пайпу можно с помощью <strong>ПКМ</strong></p>
+  <p><strong>Лайфхак</strong> для ленивых!!! Введя в консоль <strong>bind "клавиша" "sm_pmenu"</strong> вы получите доступ ко всем командам в 2 клика!</p>
+  </div>
+  
+   <div style="display: none;">
+  <p>Все команды следует вводить в игровой чат.</p>
+    <table id="cmd" cellspacing="1" cellpadding="1">
+      <tbody>
+      <tr>
+        <td class="chat">Лазерный прицел(без перков)</td>
+        <td>Надоедливая красная точка вместо прицела</td>
+      </tr>
+      <tr>
+        <td class="chat">Глушитель(без перков)</td>
+        <td>Тишина - золото!</td>
+      </tr>
+		<tr>
+        <td class="chat">Увеличенный Магазин</td>
+        <td>Увеличивает количество патронов в обойме</td>
+      </tr>
+      <tr>
+        <td class="chat">Ловкость рук</td>
+        <td>Увеличеная скорость перезарядки</td>
+      </tr>
+      <tr>
+        <td class="chat">Кеды-скороходы</td>
+        <td>Увеличеная скорость ходьбы</td>
+      </tr>
+      <tr>
+        <td class="chat">Дождевик</td>
+        <td>Заблёв нам не по чем</td>
+      </tr>
+      <tr>
+        <td class="chat">Мел для лазания</td>
+        <td>Самоподнятие с уступа с помощью ПКМ</td>
+      </tr>	
+      <tr>
+        <td class="chat">Пиротехник</td>
+        <td>Пайпа тикает дольше</td>
+      </tr>	  
+      <tr>
+        <td class="chat">Горячая еда</td>
+        <td>Просто 150 хп</td>
+      </tr>
+      <tr>
+        <td class="chat">Мазь</td>
+        <td>Лечение до 150 хп</td>
+      </tr>
+      <tr>
+        <td class="chat">Нашатырь</td>
+        <td>Быстрый подъем товарища</td>
+      </tr>
+      <tr>
+        <td class="chat">Очки</td>
+        <td>Виденье сквозь рвоту</td>
+      </tr>
+      <tr>
+        <td class="chat">Нож</td>
+        <td>Убийство падлы что тебя калечит</td>
+      </tr>
+	  <tr>
+        <td class="chat">Фельдшер</td>
+        <td>Быстрое лечение себя и остальных</td>
+      </tr>
+	  <tr>
+    </tbody></table>
+  <p><br>При включении перков дейсвие таблеток и регенерации увеличивается до 150 ХП!</br>
+   Огромное спасибо <strong>Den Марко</strong></p>
+
+  </div>
+    
+  <div style="display: none;">
+  <p>Администрация сервера:</p>
+    <table id="cmd" cellspacing="1" cellpadding="1" border="1">
+      <tbody><tr>
+        <td class="chat"><a href= "http://steamcommunity.com/id/history_maker">History_Maker</a></td>
+        <td>Главный администратор</td>
+      </tr>
+      <tr>
+        <td class="chat"><a href= "http://steamcommunity.com/id/Fa3q">//A.Lex</a></td>
+        <td>Заместитель главного администратора</td>
+      </tr>
+	  <tr>
+		<td class="chat"><a href= "http://steamcommunity.com/profiles/76561198059833453">Irinka</a></td>
+		<td>Администратор</td>
+	  </tr>
+	  <tr>
+		<td class="chat"><a href= "http://steamcommunity.com/id/JackDanielgirl">Пряня</a></td>
+		<td>Администратор</td>
+	  </tr>
+	  <tr>
+		<td class="chat"><a href= "http://steamcommunity.com/profiles/76561198039110068">panzer fusilier</a></td>
+		<td>Администратор</td>
+	  </tr>
+	  <tr>
+		<td class="chat"><a href= "http://steamcommunity.com/id/shipluss">ship</a></td>
+		<td><a href= "https://www.youtube.com/channel/UCeoPp-cc7dHnD3w8xvURfew" style="color: #961617;">Youtuber</a></td>
+	  </tr>
+	  <tr>
+        <td class="chat"><a href= "http://steamcommunity.com/profiles/76561198120270424">Death Seeker</a></td>
+        <td>Vip</td>
+      </tr>
+	  <tr>
+        <td class="chat"><a href= "http://steamcommunity.com/id/aLeXO_Oo">Alex_x</a></td>
+        <td>Vip</td>
+      </tr>
+    </tbody></table>
+	
+  <p>Создатель сервера:</p>
+	
+    <table id="cmd" cellspacing="1" cellpadding="1" border="1">
+      <tbody><tr>
+        <td class="chat"><a href= "http://steamcommunity.com/id/history_maker">History_Maker</a></td>
+        <td>Создатель, Царь, Бог</td>
+      </tr>
+    </tbody></table>
+  </div>
+  <div style="display: none;">
+  
+  <p>Игровой сервер: <strong>Be my Sacrifice!</strong><br>
+	IP Адрес: <strong>46.174.52.19:27229</strong><br>
+
+  </p><p>Стим группа:<br>
+  <a target="_blank" href="http://steamcommunity.com/groups/bmsacrifice">http://steamcommunity.com/groups/bmsacrifice</a></p>
+
+  <p>Сайт игровой статистики:<br>
+  <a target="_blank" href="http://bmsstats.myarena.ru/stats/hlstats.php?mode=players&game=l4d">http://bmsstats.myarena.ru/stats/hlstats.php?mode=players&game=l4d</a></p>
+  
+  <p>Главный администратор:<br>
+  <a target="_blank" href="http://steamcommunity.com/id/history_maker">http://steamcommunity.com/id/history_maker</a></p>
+      <br>
+  </div>
+</div>
+<!-- @end .panes -->
+
+<script>
+$(function() {
+	$("ul.tabs").tabs("div.panes > div");
+});
+</script>
+
+
+</body></html>
