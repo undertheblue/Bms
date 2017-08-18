@@ -1,0 +1,130 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin:40px auto;
+    background: url(.../Bms/background.jpg) no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+    background-position: 100%;
+    background-attachment: fixed;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: white;
+	width: 600px;
+	min-width: 800px;
+    width: 95%;
+	overflow-y: scroll;
+}
+p {
+	margin: 15px 0;
+	line-height: 20px;
+    color: white;
+	font-weight: bold;
+}
+
+strong{
+    color: #ff5500;
+}
+
+a:link, a:visited {
+	color: #ff5500;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: black;
+    background: rgba(255,255,255, 0.90);
+	text-decoration: none;
+}
+
+/* tabs */
+div.panes div {
+	display: none;
+	background-color: black;
+	border: 1px solid white;
+	font-size: 14px;
+	padding: 25px;
+    background: rgba(0,0,0, 0.7);
+}
+
+/* root element for tabs */
+ul.tabs { 
+	list-style: none;
+	height:28px;
+    background-color: rgba(0,0,0, 0.20);;
+}
+
+/* single tab */
+ul.tabs li { 
+	float: left;
+}
+
+ul.tabs a { 
+	color: white;
+	font-size: 14px;
+	padding: 10px;
+	text-align: center;	
+	text-decoration: none;
+}
+
+ul.tabs a:hover {
+	color: darkmagenta;
+    background: 7A7A7A;
+}
+
+/* active tab uses a class name "current" */
+ul.tabs a.current, ul.tabs a.current:hover, ul.tabs li.current a {
+	color: #ff5500;
+}
+
+/* table */
+#cmd td {
+    border: solid white 1px;
+	line-height: 20px;
+	padding: 5px 10px;
+    margin: auto;
+    background-color: rgba(0,0,0, 0.7);
+}
+
+.chat {
+	color: #ff5500; 
+	font-weight: bold;
+	width: 120px;
+}
+
+.rules {
+	margin-left: 25px; 
+}
+
+.rules li {
+	line-height: 20px;
+	margin-bottom: 5px;
+}
+
+.watch {
+	color: blue;
+	font-size: 16px;
+	font-weight: bold;
+	margin-left: 40px; 
+}
+
+/*РњРѕР№ С„СЂРµР№Рј*/
+iframe{
+    width: 100%;
+    height=200%;
+}
+
+#fr{
+   width: 100%; 
+    margin: 0; 
+    padding: 0;
+    min-height: 600px;
+    max-height: 1000 px;
+    overflow:hidden;
+}
